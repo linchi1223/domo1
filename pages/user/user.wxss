@@ -1,0 +1,144 @@
+/* .wxss 后缀的 WXSS 样式文件 样式css
+ */
+
+/**index.wxss**/
+
+page {
+  background-color: rgb(241, 241, 241);
+
+}
+
+view {
+  margin: 0;
+  padding: 0;
+}
+
+.userinfo {
+  /* background-color: greenyellow; */
+  height: 200rpx;
+  width: 100%;
+  z-index: 100;
+}
+
+.userinfo-bar {
+  /* background-color: #eee; */
+  padding: 35rpx 10rpx;
+}
+
+.clear {
+  clear: both;
+}
+
+.userinfo-avatar {
+  margin-left: 10rpx;
+}
+
+.userinfo-avatar1 {
+  width: 128rpx;
+  height: 128rpx;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  float: left;
+}
+
+.userinfo-avatar img {
+  margin: 3rpx;
+  display: inline-block;
+}
+
+.userinfo-nickname {
+  color: #fff;
+  float: left;
+  font-size: 30rpx;
+  width: 60%;
+  margin-left: 10rpx;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+.userinfo-nickname-Name {
+  line-height: 80rpx;
+  font-size: 40rpx;
+}
+
+.usermotto {
+  margin-top: 200px;
+  background-color: gold;
+  height: 30px;
+  width: 100%;
+}
+
+.right {
+  position: relative;
+  border: 1px solid #fff;
+  border-color: #fff #fff transparent transparent;
+  width: 10px;
+  height: 10px;
+  float: right;
+  transform: rotate(43deg);
+  margin: 50rpx 20rpx;
+}
+
+.api {
+  margin-top: 20rpx;
+  background-color: #eaeaea;
+  width: 100%;
+}
+
+.tq {
+  margin: 10rpx;
+  background-color: #fff;
+  width: 25%;
+  height: 0;
+  padding-bottom: 25%;
+  color: #0a0a0a;
+  text-align: center;
+}
+
+.bgimg {
+  width: 200%;
+  height: 0;
+  padding-bottom: 200%;
+  border-radius: 50%;
+  margin-left: -50%;
+  margin-top: -150%;
+  background: linear-gradient(rgb(255, 0, 0),rgba(255, 0, 0,1), rgba(233, 87, 137, 0.2));
+  position: fixed;
+  z-index: -1;
+  box-shadow:0 0 30rpx rgba(233, 87, 137,1);
+}
+
+.order {
+  background-color: #fff;
+  width: 95%;
+  margin: 0 auto;
+  height: 200rpx;
+  border-radius: 50rpx;
+ 
+}
+
+.order .orders{
+  width:20%;
+  height:80%;
+  float: left;
+  padding:45rpx 0 0 0;
+}
+.order .orderss{
+  width:20%;
+  height:80%;
+  float: left;
+  padding:45rpx 0;
+ overflow: hidden;
+}
+.order .orders image{
+  display: block;
+  width: 35%;
+  margin: 10rpx auto;
+}
+.order .orders text{
+  text-align: center;
+  display: block;
+  font-size: 20rpx;
+  font-weight: 200;
+  color: #000;
+}

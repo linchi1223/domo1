@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/find/find",
+    "pages/user/user",
+    "pages/cart/cart",
+    "pages/index/index",
+    "pages/temp/temp",
+    "pages/select/select",
+    "pages/goodnews/goodnews"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/img/icon4.png",
+        "selectedIconPath": "/img/icon41.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "分类",
+        "iconPath": "/img/icon1.png",
+        "selectedIconPath": "/img/icon11.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "/img/icon2.png",
+        "selectedIconPath": "/img/icon21.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/img/icon3.png",
+        "selectedIconPath": "/img/icon31.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,163 @@
+/* 搜索框E */
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.select {
+  background-color: #f0f3fc;
+  width: 95%;
+  clear: both;
+  margin: 20rpx auto;
+  border-radius: 30px;
+}
+
+.select image {
+  margin: 10rpx 5rpx 10rpx 15rpx;
+  line-height: 20rpx;
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+
+.select .textss {
+  height: 70rpx;
+  line-height: 70rpx;
+  color: #a3a3a3;
+  font-weight: 300;
+  font-size: 26rpx;
+}
+
+/* 搜索框E */
+
+.container1 {
+  border-top: 1px solid #f0f3fc;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  clear: both;
+}
+
+.c-left {
+  /* background-color: darkgreen; */
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+.c-right {
+  background-color: #f0f3fc;
+  width: 75%;
+  height: 100%;
+  float: right;
+}
+
+.categroy-left {
+  float: left;
+  width: 100%;
+  height: 100%;
+  /* border-right: 1px solid #ddd; *//* background: rosybrown; */
+  box-sizing: border-box;
+  font-size: 26rpx;
+}
+
+.cate-list {
+  height: 90rpx;
+  width: 100%;
+  background-color: #fff;
+  line-height: 90rpx;
+  text-align: center;
+  color: #000;
+  font-size: 26rpx;
+}
+
+.cate-list.click {
+  /* color: #FE7774; */
+  color: red;
+  background: #f0f3fc;
+}
+
+.categroy-right {
+  color: #000;
+  float: right;
+  width: 98%;
+  height: 100%;
+  /* border-right: 1px solid #ddd; */
+  box-sizing: border-box;
+  font-size: 30rpx;
+}
+
+.cate-box {
+  background-color: #fff;
+  margin-top: 20rpx;
+  clear: both;
+}
+
+/* .product {
+  background-color: white;
+  overflow: hidden;
+  clear:  both;
+}
+
+.product .products {
+  width: 30%;
+  background-color: greenyellow;
+  display: block;
+  height: 300rpx;
+  margin: 10rpx 8rpx;
+  float:  left ;
+  
+}
+.product .products image{
+  width: 150rpx;
+  height: 150rpx;
+  display: block;
+  margin: 0 auto;
+}
+.product .products text{
+  display: block;
+  font-size: 20rpx;
+  height: 20rpx;
+  text-align: center
+} */
+.product{
+  margin-top:15rpx;
+  display: inline-block;
+}
+.products{
+    display: inline-block;
+    width: 30%;
+    margin: 8rpx;
+    /* height: 160rpx; */
+    text-align: center;
+    /* background-color: tomato; */
+    font-size: 24rpx;
+    /* float: left; */
+    vertical-align: top;
+}
+.products image{
+    width: 120rpx;
+    height: 120rpx;
+    display: block;
+    margin: 0 auto ;
+    
+}
+/* .product-list:nth-child(3n){
+    margin-right: 0;
+} */
+
+.text{
+  /* height: 70rpx;
+  width: 120rpx; */
+  margin-left: 20rpx;
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
+}
+.tittle{
+  margin:  0 20rpx;
+  display: block;
+
+}

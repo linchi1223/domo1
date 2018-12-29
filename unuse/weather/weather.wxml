@@ -1,0 +1,12 @@
+<!--pages/weather/weather.wxml-->
+<label>天气
+</label>
+<input class="input1" bindinput="input"  placeholder="输入要查询的地点"></input>
+<view>
+<button class="btn1" bindtap='select'>查询</button>
+</view>
+<scroll-view scroll-y="true" style="height:200px">
+<!-- <view wx:for="{{inputaa.data}}">
+
+</view> -->
+</scroll-view>

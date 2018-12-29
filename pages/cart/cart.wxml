@@ -1,0 +1,4 @@
+<import src="../temp/temp.wxml" />
+<!-- 调用模版 -->
+
+  <template is="nullcart" data="{{...goodsList}}"></template>

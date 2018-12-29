@@ -1,0 +1,25 @@
+<!-- 首页ok.wxml  滚轮模块 -->
+
+<view class='select' bindtap='selecttip'>
+  <image src='/img/search.png'></image>
+  <view class='textss'>搜索</view>
+</view>
+
+<scroll-view scroll-y>
+  <view>
+    <swiper class='swiper_box' circular="true" bindchange="swiperchange" >
+      <block wx:for="{{banners}}" wx:key="id">
+        <swiper-item>
+          <image bindtap='tapBanner' data-id="{{item.goodsId}}" class='swiperimg' src="{{item.path}}" lazy-load='true'>
+          </image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class='dots'>
+      <block wx:for="{{banners}}" wx:key="id">
+        <view class="dot{{index == swiperCurrent ? ' active' : ''}}">
+        </view>
+      </block>
+    </view>
+  </view>
+</scroll-view>

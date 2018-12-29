@@ -1,0 +1,54 @@
+<!--index.wxml
+.wxml 后缀的 WXML 模板文件
+-->
+<!-- 背景圆 -->
+<view class='bgimg'>
+</view>
+
+<!-- 用户信息 -->
+<navigator class='userinfo'>
+  <view class='userinfo-bar'>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <view wx:else>
+      <view class='userinfo-avatar'>
+        <image bindtap="bindViewTap" class="userinfo-avatar1" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      </view>
+      <view class="userinfo-nickname">
+        <view class='userinfo-nickname-Name'>
+          <text>{{userInfo.nickName}}</text>
+        </view>
+        <view>
+          <text>{{userInfo.nickName}}</text>
+        </view>
+      </view>
+      <!-- 右箭头 -->
+      <view class='right'>
+      </view>
+    </view>
+    <view class='clear'></view>
+  </view>
+</navigator>
+
+<view class='order'>
+  <view class='orders'>
+    <image src='/img/x1.png' mode="widthFix" bindtap='tapgo'></image>
+    <text bindtap='tapgo'>待付款</text>
+  </view>
+    <view class='orders'>
+    <image src='/img/x3.png' mode="widthFix"></image>
+    <text>待收货</text>
+  </view>
+   
+    <view class='orders'>
+    <image src='/img/x4.png' mode="widthFix"></image>
+    <text>评价</text>
+  </view>
+   <view class='orders'>
+    <image src='/img/x5.png' mode="widthFix"></image>
+    <text>售后</text>
+  </view>
+   <view class='orders'>
+    <image src='/img/x2.png' mode="widthFix"></image>
+    <text>全部订单</text>
+  </view>
+</view>

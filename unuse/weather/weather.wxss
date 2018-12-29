@@ -1,0 +1,17 @@
+/* pages/weather/weather.wxss */
+label{
+  text-align: center;
+  display: block
+}
+input{
+  border: 1px solid #aaaaaa;
+  width: 80%;
+  margin:0 auto;
+  border-radius:5px; 
+  padding: 10rpx;
+}
+.btn1{
+  width: 30%;
+  background-color: gold;
+  margin: 20rpx auto;
+}

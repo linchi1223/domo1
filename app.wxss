@@ -1,0 +1,19 @@
+/**app.wxss**/
+
+page {
+  height: 100%;
+  font-size: 12pt;
+  color:#a0a0a0;
+  overflow-x: hidden; /* x轴溢出隐藏 */
+  font-family: inherit;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}

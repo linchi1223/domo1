@@ -1,0 +1,45 @@
+
+/* 搜索框S */
+.select {
+  background-color: #f0f3fc;
+  border-radius: 30rpx;
+  margin: 20rpx 15rpx;
+  width: 80%;
+  float: left;
+}
+/* 搜索框E */
+
+/* 搜索框图标S */
+
+.select image {
+  margin: 10rpx 5rpx 10rpx 15rpx;
+  line-height: 20rpx;
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+
+/* 搜索框图标E */
+
+/* 搜索框inputS */
+
+.select input {
+height: 70rpx;
+line-height: 70rpx;
+color: #a3a3a3;
+font-weight: 300;
+font-size: 26rpx;
+}
+
+/* 搜索框inputE */
+/* 取消S */
+.cancel{
+  display: inline-block;
+  position: absolute;
+  height: 110rpx;
+  line-height: 110rpx;
+  margin: 0 20rpx ;
+  color: #000;
+  font-size: 30rpx;
+}
+/* 取消E */

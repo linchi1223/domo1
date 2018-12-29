@@ -1,0 +1,7 @@
+<view>
+<view class='select'>
+  <image src='/img/search.png'></image>
+  <input placeholder='搜索商品' bindinput='input' auto-focus='true'></input>
+</view>
+<view class='cancel' bindtap='cancle'>取消</view>
+</view>

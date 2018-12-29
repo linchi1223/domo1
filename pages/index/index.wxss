@@ -1,0 +1,80 @@
+/* 搜索框E */
+.select {
+   background-color: #f0f3fc;
+  width: 95%;
+  clear: both;
+  margin: 20rpx auto ;
+  border-radius:30px; 
+}
+
+
+/* 搜索框E */
+
+/* 搜索框图标S */
+
+.select image {
+  margin: 10rpx 5rpx 10rpx 15rpx;
+  line-height: 20rpx;
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+
+/* 搜索框图标E */
+
+.select .textss {
+  height: 70rpx;
+  line-height: 70rpx;
+  color: #a3a3a3;
+  font-weight: 300;
+  font-size: 26rpx;
+}
+
+/* 轮播图片适配S  */
+
+.swiper_box {
+  width: 100%;
+  height: 330rpx;
+  margin: auto;
+  padding: 0rpx;
+  /* background-color:forestgreen;  */
+}
+
+swiper-item image {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  height: 330rpx;
+}
+
+/* 轮播图片适配E  */
+
+/* 轮播点S */
+
+.dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20rpx;
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+  z-index: 10000;
+}
+
+.dots .dot {
+  margin: 0 8rpx;
+  width: 15rpx;
+  height: 15rpx;
+  background: #000;
+  border-radius: 30%;
+  transition: all 0.6s; /*手机端不用适配*/
+  opacity: 0.5;
+}
+
+.dots .dot.active {
+  width: 14rpx;
+  background-color: #fff;
+}
+
+/* 轮播点E */
