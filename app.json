@@ -1,12 +1,15 @@
 {
   "pages": [
+    "pages/address/address",
+    "pages/addressadd/addressadd",
     "pages/find/find",
+    "pages/goodnews/goodnews",
+    "pages/pay/pay",
     "pages/user/user",
     "pages/cart/cart",
     "pages/index/index",
     "pages/temp/temp",
-    "pages/select/select",
-    "pages/goodnews/goodnews"
+    "pages/select/select"
   ],
   "window": {
     "backgroundTextStyle": "light",

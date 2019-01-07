@@ -13,7 +13,7 @@
         "sn": "2018091423131",
         "isNew": false,
         "categoryName": "电动系列",
-        "categoryId": 256,
+        "goodsId": 256,
         "sales": 30
       },
       {
@@ -26,7 +26,7 @@
         "sn": "2018101723533",
         "isNew": false,
         "categoryName": "牙线牙间隙",
-        "categoryId": 258,
+        "goodsId": 258,
         "sales": 64
       },
       {
@@ -39,7 +39,7 @@
         "sn": "2018101723534",
         "isNew": true,
         "categoryName": "牙线牙间隙",
-        "categoryId": 258,
+        "goodsId": 258,
         "sales": 0
       },
       {
@@ -52,7 +52,7 @@
         "sn": "2018112824038",
         "isNew": false,
         "categoryName": "限时活动",
-        "categoryId": 261,
+        "goodsId": 261,
         "sales": 41
       },
       {
@@ -65,7 +65,7 @@
         "sn": "2018120324139",
         "isNew": false,
         "categoryName": "限时活动",
-        "categoryId": 261,
+        "goodsId": 261,
         "sales": 0
       },
       {
@@ -78,7 +78,7 @@
         "sn": "2018121324240",
         "isNew": false,
         "categoryName": "限时活动",
-        "categoryId": 261,
+        "goodsId": 261,
         "sales": 0
       },
       {
@@ -91,7 +91,7 @@
         "sn": "2018071620706",
         "isNew": false,
         "categoryName": "成人牙刷",
-        "categoryId": 247,
+        "goodsId": 247,
         "sales": 1719
       },
       {
@@ -104,7 +104,7 @@
         "sn": "2018082722528",
         "isNew": false,
         "categoryName": "正畸系列",
-        "categoryId": 252,
+        "goodsId": 252,
         "sales": 84
       },
       {
@@ -117,7 +117,7 @@
         "sn": "2018082722641",
         "isNew": false,
         "categoryName": "炫白系列",
-        "categoryId": 253,
+        "goodsId": 253,
         "sales": 0
       },
       {
@@ -130,7 +130,7 @@
         "sn": "2018082722642",
         "isNew": false,
         "categoryName": "电动系列",
-        "categoryId": 256,
+        "goodsId": 256,
         "sales": 0
       },
       {
@@ -143,7 +143,7 @@
         "sn": "2018082822932",
         "isNew": false,
         "categoryName": "成人牙膏",
-        "categoryId": 248,
+        "goodsId": 248,
         "sales": 416
       },
       {
@@ -156,7 +156,7 @@
         "sn": "2018092823231",
         "isNew": false,
         "categoryName": "礼盒",
-        "categoryId": 259,
+        "goodsId": 259,
         "sales": 45
       },
       {
@@ -169,7 +169,7 @@
         "sn": "2018092923234",
         "isNew": false,
         "categoryName": "榜上有名",
-        "categoryId": 260,
+        "goodsId": 260,
         "sales": 705
       },
       {
@@ -182,7 +182,7 @@
         "sn": "2018101723535",
         "isNew": true,
         "categoryName": "牙线牙间隙",
-        "categoryId": 258,
+        "goodsId": 258,
         "sales": 0
       },
       {
@@ -195,7 +195,7 @@
         "sn": "2018101823536",
         "isNew": true,
         "categoryName": "你没见过的",
-        "categoryId": 255,
+        "goodsId": 255,
         "sales": 0
       },
       {
@@ -208,7 +208,7 @@
         "sn": "2018101823537",
         "isNew": true,
         "categoryName": "你没见过的",
-        "categoryId": 255,
+        "goodsId": 255,
         "sales": 0
       },
       {
@@ -221,7 +221,7 @@
         "sn": "2018122024341",
         "isNew": false,
         "categoryName": "限时活动",
-        "categoryId": 261,
+        "goodsId": 261,
         "sales": 26
       },
       {
@@ -234,7 +234,7 @@
         "sn": "2018071620714",
         "isNew": false,
         "categoryName": "儿童牙刷",
-        "categoryId": 249,
+        "goodsId": 249,
         "sales": 169
       },
       {
@@ -247,7 +247,7 @@
         "sn": "2018071720741",
         "isNew": false,
         "categoryName": "电动系列",
-        "categoryId": 256,
+        "goodsId": 256,
         "sales": 531
       },
       {
@@ -260,7 +260,7 @@
         "sn": "2018071720743",
         "isNew": false,
         "categoryName": "你没见过的",
-        "categoryId": 255,
+        "goodsId": 255,
         "sales": 387
       }
     ],

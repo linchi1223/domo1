@@ -1,6 +1,21 @@
-page{
-  background-color: #f5f5f9
+page {
+  background-color: #f5f5f9;
 }
+
+.jiesuan-box {
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+}
+
 .nullcart {
   /* width: 100%;
   padding-top: 400rpx;
@@ -10,7 +25,6 @@ page{
   background: url(https://tooth.vverp.com/resources/icon/emptyCar.png) no-repeat center 205rpx;
   background-size: 160rpx auto;
   margin-bottom: 50rpx; */
-
   width: 100%;
   padding-top: 400rpx;
   text-align: center;
@@ -19,7 +33,6 @@ page{
   background: url(https://tooth.vverp.com/resources/icon/emptyCar.png) no-repeat center 205rpx;
   background-size: 160rpx auto;
   margin-bottom: 50rpx;
-
 }
 
 .to-index-btn {
@@ -65,7 +78,6 @@ page{
   overflow: hidden;
   margin: 10rpx auto;
   border-radius: 30rpx;
-
 }
 
 .a-goods-conts {
@@ -204,20 +216,6 @@ page{
   color: #fff;
 }
 
-.jiesuan-box {
-  z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 100rpx;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  border-bottom: 1px solid #eee;
-  border-top: 1px solid #eee;
-  background-color: #fff;
-}
-
 .jiesuan-box .to-pay-btn {
   opacity: 1;
   width: 160rpx;
@@ -275,3 +273,50 @@ page{
   height: 150rpx;
   background-color: red;
 }
+
+.jiesuan-box .btns1 {
+  width: 40%;
+  font-size: 20rpx;
+  text-align: center;
+  /* background-color: green; */
+}
+
+.jiesuan-box .btns1 .btn {
+  margin-top: 20rpx;
+  float: left;
+  width: 33%;
+}
+
+.jiesuan-box .btns2 {
+  width: 60%;
+  text-align: center;
+  color: white;
+  font-size: 30rpx;
+}
+
+.jiesuan-box .btns2 .btn1 {
+  float: left;
+  width: 50%;
+  line-height: 100rpx;
+  background-color: #feb351;
+}
+
+.jiesuan-box .btns1 .btn image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 auto;
+  display: block;
+}
+
+.jiesuan-box .btns2 .btn2 {
+  float: left;
+  width: 50%;
+  line-height: 100rpx;
+  background-color: #e43e2e;
+}
+
+
+
+
+
+

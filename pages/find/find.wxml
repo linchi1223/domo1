@@ -31,7 +31,7 @@
           </view> -->
           <text class='tittle'>详细</text>
           
-          <view wx:for="{{goods}}" wx:key="index" class="products" bindtap="toDetailsTap">
+          <view wx:for="{{goods}}" wx:key="index" class="products" bindtap="toDetailsTap" data-cid="{{item.id}}">
 
             <image src='{{item.image}}' lazy-load='true' class='img1'></image>
             <text class='text1'>{{item.name}}</text>

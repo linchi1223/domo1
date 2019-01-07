@@ -1,0 +1,305 @@
+/* pages/pay/pay.wxss */
+
+page {
+  color: #000;
+  font-size: 30rpx;
+
+}
+
+.bg {
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+page {
+  margin: 0;
+  padding: 0;
+}
+
+.bgxx {
+  background-color: #fff;
+  height: 200rpx;
+  width: 100%;
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.bgxx image {
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+  margin: 70rpx auto;
+}
+
+.left {
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  width: 80rpx;
+  /* height: 100%; */
+  /* background: gold */
+}
+
+.center {
+  margin: 0rpx 80rpx;
+  height: 100%;
+  /* background: greenyellow; */
+  padding-top: 30rpx;
+}
+
+.center .fright {
+  float: right;
+  margin: 10rpx 0;
+}
+
+.center .fleft {
+  float: left;
+  margin: 10rpx 0;
+}
+
+.shr {
+  width: 65%;
+  /* background-color: azure */
+}
+
+.tel {
+  width: 35%;
+  /* background-color: chocolate */
+}
+
+.tel text {
+  float: right;
+}
+
+.shdd {
+  width: 100%;
+  /* background-color: cornflowerblue */
+}
+
+.right {
+  position: absolute;
+  top: 0rpx;
+  right: 0rpx;
+  width: 80rpx;
+  /* height: 100%; */
+  /* background-color: blueviolet */
+}
+.right image{
+  height: 22rpx;
+  width: 12rpx;
+  display: block;
+  margin: 80rpx auto;
+}
+
+.spxx {
+  width: 100%;
+  height: 240rpx;
+  background-color: #fff;
+}
+
+.img {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: white;
+  float: left;
+  top: 20rpx;
+  margin: 20rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 10rpx;
+}
+
+.img image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.wbxx {
+  float: left;
+  width: 65%;
+  margin-top: 20rpx;
+  height: 200rpx;
+  /* background-color: red; */
+  word-wrap: break-word;
+  position: relative;
+}
+
+.spjg {
+  position: absolute;
+  bottom: 10rpx;
+  left: 0;
+}
+
+.gs {
+  position: absolute;
+  bottom: 10rpx;
+  right: 0;
+}
+
+.box3 {
+  width: 100%;
+  height: 80rpx;
+  /* background-color: cornsilk; */
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.box3 .ts {
+  line-height: 80rpx;
+  position: absolute;
+  left: 26rpx;
+}
+
+.box3 .shu {
+  line-height: 60rpx;
+  float: right;
+  display: block;
+  margin: 10rpx;
+  z-index: 100
+}
+
+.box3 .shu view {
+  float: left;
+  text-align: center;
+  width: 60rpx;
+  background-color: #f6f6f6;
+  margin: 0 5rpx;
+}
+
+.ding {
+  background-color: #fefefe;
+  color: #ccc;
+}
+
+.box3 .shu input {
+  height: 60rpx;
+  color: #000;
+}
+
+.btns {
+  position: fixed;
+  bottom: -1000rpx;
+  width: 100%;
+  height: 75rpx;
+  /* background-color: greenyellow; */
+  color: white;
+  padding: 15rpx;
+  font-size: 35rpx;
+  transition: 0.8s;
+}
+
+.btnsshow {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 75rpx;
+  /* background-color: greenyellow; */
+  color: white;
+  padding: 15rpx;
+  font-size: 35rpx;
+  transition: 0.8s;
+}
+
+.btn11 {
+  float: left;
+  width: 46%;
+  line-height: 75rpx;
+  text-align: center;
+  background: linear-gradient(to right, #fccc0f, #fa9704);
+  border-radius: 50rpx 0 0 50rpx;
+  margin: 0 0 0 20rpx;
+}
+
+.btn110 {
+  float: left;
+  width: 96%;
+  line-height: 75rpx;
+  text-align: center;
+  background: linear-gradient(to right, #fccc0f, #fa9704, #fccc0f);
+  border-radius: 50rpx;
+  margin: 0 auto;
+}
+
+.btn21 {
+  float: left;
+  width: 46%;
+  line-height: 75rpx;
+  text-align: center;
+  background: linear-gradient(to right, #fe7905, #fe4b03);
+  border-radius: 0 50rpx 50rpx 0;
+  margin: 0 20rpx 0 0;
+}
+
+.btnsshow {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 75rpx;
+  background-color: #fff;
+  color: white;
+  padding: 15rpx;
+  font-size: 35rpx;
+  transition: 0.8s;
+}
+
+.btn110 {
+  float: right;
+  width: 30%;
+  line-height: 75rpx;
+  text-align: center;
+  background: linear-gradient(to right, #fa9704, #fc5e1f);
+  border-radius: 50rpx 0 0 50rpx;
+  margin: 0 0 0 20rpx;
+}
+
+.zj {
+  float: right;
+  color: black;
+  line-height: 75rpx;
+}
+.zj text{
+  color: #fa9704;
+}
+
+
+.invoice{
+  position: relative;
+  background-color: #fff;
+  margin-top:20rpx; 
+  margin-bottom: 20rpx; 
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.invoice .invoiceLabel{
+  position: absolute;
+  left: 26rpx;
+}
+.invoice .text{
+  position: absolute;
+  right: 50rpx;
+}
+.text .text1{
+  color: #F4302F;
+}
+.invoice .arrow{
+  position: absolute;
+  height: 22rpx;
+  width: 12rpx;
+  right: 24rpx;
+}
+
+.tips{
+  background: #fff;
+  padding: 20rpx;
+  margin-top:10rpx;
+  z-index: 10;
+}
+.tips textarea{
+  /* color: #000; */
+  width: 100%;
+  height: 150rpx;
+  display: block;
+}

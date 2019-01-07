@@ -1,0 +1,75 @@
+<view class='bg'>
+  <scroll-view>
+  <!-- 收货地址信息 -->
+    <view class='bgxx' bindtap='address_select'>
+      <view class='left'>
+        <image src='/img/icon1.png'></image>
+      </view>
+      <view class='center' wx:if="{{username==''||tel==''||address==''}}">
+        <view style="text-align:center;">请选择收货地址</view>
+      </view>
+      <view class='center' wx:if="{{username!=''&&tel!=''&&address!=''}}">
+        <view class='fleft shr'>收货人:{{username}}</view>
+        <view class='fright tel'>
+          <text> {{tel}}</text>
+        </view>
+        <view class='fleft shdd'>收货地址:{{address}}</view>
+      </view>
+      <view class='right'>
+        <image src='/img/icon-jiantou-r.png'></image>
+      </view>
+    </view>
+
+<!-- 商品列表信息 -->
+<view>
+    <view class='spxx'>
+      <view class='img'>
+        <image src='{{goods.productimages[0].source}}' mode='aspectFit'></image>
+      </view>
+      <view class='wbxx'>
+        <view class='spm'>{{name}}-{{attrname1}}</view>
+        <view class='spjg'>¥ {{price}}</view>
+        <view class='gs'>X{{number}}</view>
+      </view>
+    </view>
+    <view class='box3'>
+      <view class='ts'>购买数量</view>
+      <view class='shu'>
+        <view class="{{number<=1?'ding':''}}" bindtap="numberSub">-</view>
+        <view class='input'>
+          <input bindblur='numberBlur' data-stock='{{stock}}' value='{{number}}' disabled='true'></input>
+        </view>
+        <view class="{{number>=stock?'ding':''}}" bindtap="numberAdd" data-stock="{{stock}}">+</view>
+      </view>
+    </view>
+    <view class="tips">
+      <view>买家留言</view>
+      <view>
+        <textarea name="content" bindinput="bindkeyinput" placeholder="" value="{{content}}" disabled='{{paymentPop}}'></textarea>
+      </view>
+    </view>
+
+</view>
+
+<!-- 支付方式 -->
+    <picker range='{{payments}}' value='{{index}}' bindchange='bindchangeIndex' data-name='payIndex'>
+      <view class='invoice'>
+        <label class='invoiceLabel'>支付方式</label>
+        <label class='text'>
+          <text class='text2'>{{payments[payIndex]}}</text>
+        </label>
+        <image class='arrow' src='/img/icon-jiantou-r.png'></image>
+      </view>
+    </picker>
+  </scroll-view>
+
+  <!-- 提交订单 -->
+  <view class="btnsshow">
+    <view class='btn110'>提交订单</view>
+    <view class='zj'>合计金额:
+      <text>¥{{priceint}}</text>
+      <text>.</text>
+      <text style='font-size:28rpx;'>{{pricefloat}}</text>
+    </view>
+  </view>
+</view>

@@ -1,7 +1,7 @@
 // pages/find/find.js
 // 调用函数要加this
 
-
+const app = getApp();
 Page({
 
   /**
@@ -12,7 +12,7 @@ Page({
     goods: [],
     classname: '详情',
     indexon: 0,
-    categoryId: 0
+    goodsId: 0
   },
 
   // 获取列表
@@ -31,16 +31,18 @@ Page({
       },
     })
   },
+  
   // 获取商品列表
-  getGoodsList(categoryId) {
+  getGoodsList(goodsId) {
     var that = this;
     wx.request({
       url: 'http://127.0.0.1/domo1/data/data1.json',
       data: {
-        categoryId: categoryId
+        goodsId: goodsId
       },
       success: function(res) {
-        console.log(res.data.data.content);
+       
+        //console.log(res.data.data.content);
         that.setData({
           goods: res.data.data.content
         })
@@ -50,11 +52,11 @@ Page({
   //按钮按下
   downbar(e) {
     var that = this;
-    // console.log(that);
-    console.log(e.target.dataset);
+    // console.log(e);
+    
     that.setData({
       indexon: e.target.dataset.index,
-      categoryId: e.target.dataset.cid
+      goodsId: e.target.dataset.cid
     })
     const self = this;
     self.getGoodsList(e.target.dataset.cid)
@@ -75,10 +77,12 @@ Page({
       url: '/pages/select/select'
     })
   },
-  toDetailsTap() {
+  toDetailsTap(e) {
+   // console.log(e.currentTarget.dataset.cid)
     wx.navigateTo({
-      url: '/pages/select/select',
+      url: '/pages/goodnews/goodnews?id='+e.currentTarget.dataset.cid,
     })
+    // console.log(e.currentTarget.dataset.cid);//284
   }
 
 

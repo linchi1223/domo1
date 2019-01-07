@@ -1,11 +1,11 @@
 <!--pages/temp/temp.wxml-->
 <!-- 无商品 -->
 <template name="nullcart">
- <view class='nullcart'>
-  <text>购物车还是空的</text>
+  <view class='nullcart'>
+    <text>购物车还是空的</text>
   </view>
 </template>
-   
+
 
 
 <!-- 有商品 -->
@@ -13,14 +13,14 @@
   <view class="goodsList">
     <view class="a-gooods">
 
-     <view class='select'></view>
+      <view class='select'></view>
 
       <view class="a-goods-conts {{item.checked? 'active':''}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" style="{{item.left}}">
-      
+
 
         <view class="goods-info">
           <view class="img-box">
-            <image src="/img/img5.png" class="img"  lazy-load='true'/>
+            <image src="/img/img5.png" class="img" lazy-load='true' />
           </view>
           <view class="text-box">
             <view class="goods-title">皮包皮包皮包皮包皮包皮包</view>
@@ -36,7 +36,7 @@
           </view>
           <view class="buy-num">
             <view class="jian-btn {{item.quantity==1? 'disabled' : ''}}" catchtap="jianBtnTap" data-index="{{index}}">-</view>
-            <input type="number" value="1" disabled bindtap='isEditNum' data-index="{{index}}"/>
+            <input type="number" value="1" disabled bindtap='isEditNum' data-index="{{index}}" />
             <view class="jia-btn " catchtap="jiaBtnTap" data-index="{{index}}">+</view>
           </view>
         </view>
@@ -48,20 +48,34 @@
   </view>
 
 
-
-
-
-
-
-
   <view class="jiesuan-box">
     <view class="left-price">
-      <view class="all-selected  {{allSelect?'active':''}}" bindtap="bindAllSelect">全选</view>
+      <view class="all-selected " bindtap="bindAllSelect">全选</view>
       <view class="total" hidden="{{noSelect}}">总计 ¥ {{totalPrice}}</view>
     </view>
-    <view class="to-pay-btn edit1" hidden="{{!saveHidden}}" bindtap="editTap">编辑</view>
-    <view class="to-pay-btn edit1" hidden="{{saveHidden}}" bindtap="saveTap">完成</view>
-    <view class="to-pay-btn {{noSelect?'no-select':''}}" hidden="{{!saveHidden}}" bindtap="toPayOrder">结算</view>
-    <view class="to-pay-btn {{noSelect?'no-select':''}}" hidden="{{saveHidden}}" bindtap="deleteSelected">删除</view>
+    <view class="to-pay-btn edit1" bindtap="editTap">编辑</view>
+    <view class="to-pay-btn edit1" bindtap="saveTap">完成</view>
+    <view class="to-pay-btn " bindtap="toPayOrder">结算</view>
+    <view class="to-pay-btn " bindtap="deleteSelected">删除</view>
   </view>
 </template>
+
+<template name="goodsnew">
+  <view class="jiesuan-box">
+    <view class='btns1'>
+      <view class="btn">
+        <image src='/img/x1.png'></image> 收藏</view>
+      <view class="btn">
+        <image src='/img/x2.png'></image> 收藏</view>
+      <view class="btn">
+        <image src='/img/x3.png'></image> 收藏</view>
+    </view>
+    <view class='btns2'>
+      <view class='btn1'>加入购物车</view>
+      <view class='btn2'>立即购买</view>
+
+    </view>
+  </view>
+</template>
+
+

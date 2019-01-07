@@ -1,12 +1,13 @@
 /* 搜索框E */
+
 .select {
-   background-color: #f0f3fc;
+  background-color: #f0f3fc;
   width: 95%;
   clear: both;
-  margin: 20rpx auto ;
-  border-radius:30px; 
+  margin: 20rpx auto;
+  border-radius: 30px;
+  z-index: 100;
 }
-
 
 /* 搜索框E */
 

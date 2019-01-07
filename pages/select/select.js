@@ -58,7 +58,11 @@ Page({
   onReachBottom: function () {
 
   },
-
+  cancle:function(){
+    wx.navigateBack({
+      
+    })
+  },
   /**
    * 用户点击右上角分享
    */

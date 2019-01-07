@@ -5,7 +5,7 @@ Page({
     swiperCurrent: 0, //轮播图圈圈在那个位置
     banners: [{
         "id": 0,
-        "path": '/img/ok_banner1.png',
+        "path": '/img/4.png',
         "url": null,
         "goodsId": "311",
         "sn": "2018120324139",
@@ -14,7 +14,7 @@ Page({
 
       {
         "id": 1,
-        "path": '/img/ok_banner1.png',
+        "path": '/img/1.png',
         "url": null,
         "goodsId": "312",
         "sn": "2018121324240",
@@ -22,7 +22,7 @@ Page({
       },
       {
         "id": 2,
-        "path": '/img/ok_banner1.png',
+        "path": '/img/2.png',
         "url": null,
         "goodsId": "163",
         "sn": "2018080721716",
@@ -30,9 +30,9 @@ Page({
       },
       {
         "id": 3,
-        "path": '/img/ok_banner1.png',
+        "path": '/img/3.png',
         "url": null,
-        "goodsId": null,
+        "goodsId": "8",
         "sn": null,
         "isExhibition": false
       }
@@ -40,7 +40,7 @@ Page({
   },
   // 点击轮播图进行页面跳转
   tapBanner: function(e) {
-    //console.log(e.currentTarget.dataset.id);
+    // console.log(e.currentTarget.dataset.id);
     // console.log(e.currentTarget.dataset);
     // console.log(e.currentTarget);
     // console.log(e);
@@ -51,13 +51,14 @@ Page({
 
       // console.log('1');
       wx.navigateTo({
-        url: "/pages/goodnews/goodnews?id=" + e.currentTarget.dataset.id
+        // url: "/pages/goodnews/goodnews?id=" + e.currentTarget.dataset.id
+        url:"/pages/goodnews/goodnews"
       })
     }
   },
   //轮播图一张滑动完成后触发的事件，获取当前轮播图所在位置
   swiperchange: function(e) {
-    console.log(e);
+    // console.log(e);
     this.setData({
       swiperCurrent: e.detail.current //detail是微信内部的请求
     })

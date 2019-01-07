@@ -1,0 +1,56 @@
+<button bindtap="chanMask">
+  点我</button>
+
+<view class="zbg" catchtouchmove="preventTouchMove" bingtap="chanMask">
+  <view class="{{show? 'tbgshow':'tbg'}}">
+    <view class='box'>
+      <image src='/img/img5.png' mode='aspectFit'></image>
+      <view class='goodxx'>
+        <view class='t1'>¥ 1</view>
+        <view class='t2'>库存 1 件</view>
+        <view class='t3'>请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择</view>
+      </view>
+
+      <view class='box1'>
+        <scroll-view scroll-y="true" class='gd'>
+          <view class='box2'>
+            <view class='bt'>更多版本</view>
+            <view class='bb'>
+              <text class='t1'>告诉大家能够回来耍的吧</text>
+              <!-- <text class='t2'>xxx</text> -->
+            </view>
+            <view class='bb'>
+              <text class='t1'>告诉大家能够回来耍的吧</text>
+              <!-- <text class='t2'>xxx</text> -->
+            </view>
+          </view>
+
+          <view class='box3'>
+            <view class='ts'>购买数量</view>
+            <view class='shu'>
+              <view class='jian'>-</view>
+              <view class='input'>
+                <input value='1'></input>
+              </view>
+              <view class='jia'>+</view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+
+    <!-- <view class='btnsshow'>
+      <view class='btn11'>加入购物车</view>
+      <view class='btn21'>立即购买</view>
+    </view> -->
+
+
+    <view class="{{show? 'btnsshow':'btns'}}">
+      <view class='btn11'>加入购物车</view>
+      <view class='btn21'>立即购买</view>
+    </view>
+    <!-- <view class='btns'>
+      <view class='btn110'>加入购物车</view>
+    </view> -->
+  </view>
+</view>

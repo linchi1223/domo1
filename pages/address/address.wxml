@@ -1,0 +1,29 @@
+<view>
+  <scroll-view>
+    <view class='zong'>
+      <view class='usertb'>{{username[0]}}</view>
+      <view class='center'>
+        <view class='centerup'>
+          <view class='username'>{{username}}</view>
+          <view class='usertel'>{{usertel}}</view>
+        </view>
+        <view class='useraddress'>{{useraddress}}{{useraddressxiangxi}}</view>
+      </view>
+      <view class='bj' bindtap='addressadd' data-username='{{username}}' data-usertel='{{usertel}}' data-address='{{useraddress}}' data-lx='{{typealter}}'>编辑</view>
+    </view>
+      <view class='zong'>
+      <view class='usertb'>{{username[0]}}</view>
+      <view class='center'>
+        <view class='centerup'>
+          <view class='username'>{{username}}</view>
+          <view class='usertel'>{{usertel}}</view>
+        </view>
+        <view class='useraddress'>{{useraddress}}{{useraddressxiangxi}}</view>
+      </view>
+      <view class='bj' bindtap='addressadd' data-username='{{username}}' data-usertel='{{usertel}}' data-address='{{useraddress}}' data-lx='{{typealter}}'>编辑</view>
+    </view>
+  </scroll-view>
+  <view class="addaddress" bindtap='addressadd' data-lx='{{typeadd}}'>
+    添加新的地址
+  </view>
+</view>
