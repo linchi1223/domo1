@@ -10,7 +10,8 @@
     "pages/cart/cart",
     "pages/temp/temp",
     "pages/select/select",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/temp2/temp2"
   ],
   "window": {
     "backgroundTextStyle": "light",

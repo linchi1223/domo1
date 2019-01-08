@@ -5,22 +5,22 @@ Component({
       type: Object,
       observer: 'format'
     },
-   
+
   },
   data: {
 
   },
   methods: {
-    format:function(){
-      const commodity=this.data.commodity
-      if(!commodity.name){
-        commodity.name="";
+    format: function () {
+      const commodity = this.data.commodity
+      if (!commodity.name) {
+        commodity.name = "";
       }
       this.setData({
         commodity
       })
     },
-    clickItem: function() {
+    clickItem: function () {
       wx.navigateTo({
         url: `/pages/goodnews/goodnews?id=${this.data.commodity.id}`
       })

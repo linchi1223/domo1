@@ -1,0 +1,14 @@
+<template name="xiangshi">
+<view class="common-item"  wx:key="{{ commodity.id }}" bindtap='clickItem'>
+  <image class='image' src='{{commodity.image}}' lazy-load='true'></image>
+  <view class='label'>{{commodity.name}}</view>
+  <view class='price'> ￥{{commodity.price}}</view>
+  <view class='sell'>已售{{commodity.sales}}件</view>
+   <view class='newGoods' wx:if="{{commodity.isNew}}"> 
+    <image src='/img/goodsIcon/newGoods.png'></image>
+  </view>
+  <view class='solden' wx:if="{{commodity.coutofstock}}">  
+    <image src='/img/goodsIcon/solden.png'></image>
+  </view>
+</view>
+</template>

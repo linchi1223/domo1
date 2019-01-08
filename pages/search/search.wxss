@@ -18,12 +18,13 @@ page {
   height: 110rpx;
   /* justify-content: center; */
   align-items: center;
-  border-bottom: 1px solid #F3F3F3;
+  border-bottom: 1px solid #f3f3f3;
   /* background: #f3f3f3; */
   background: #fff;
   z-index: 999;
 }
-.search-cancel{
+
+.search-cancel {
   display: inline-block;
   margin-left: 20rpx;
   height: 64rpx;
@@ -35,28 +36,28 @@ page {
 }
 
 .search-input {
-  margin: 0 20rpx; 
+  margin: 0 20rpx;
   /* padding: 0 30rpx 0 130rpx; */
   padding-left: 70rpx;
   width: 70%;
   height: 65rpx;
   line-height: 65rpx;
-  /* border-radius: 10rpx; */
-  /* border:1rpx solid #e3e3e3; */
+  /* border-radius: 10rpx; *//* border:1rpx solid #e3e3e3; */
   background: #f2f2f2;
   font-size: 26rpx;
   /* background: #fff; */
 }
 
- .search-wrapper .icon {
-  position: absolute; 
+.search-wrapper .icon {
+  position: absolute;
   top: 40rpx;
   left: 45rpx;
   width: 34rpx;
   height: 34rpx;
 }
+
 .order-items {
-  width: 100%;  
+  width: 100%;
   display: flex;
   height: 84rpx;
   /* border-bottom: 1rpx solid #fbfbfb; */
@@ -66,7 +67,7 @@ page {
 }
 
 .order-items .item {
-   position: relative;
+  position: relative;
   margin: 0 42rpx;
   box-sizing: border-box;
   height: 100%;
@@ -77,6 +78,7 @@ page {
   /* color: #686868; */
   color: #000;
 }
+
 .order-items .item .icon-sort {
   width: 32rpx;
   height: 32rpx;
@@ -84,13 +86,16 @@ page {
   top: 28rpx;
   right: -12rpx;
 }
+
 .order-items .item.active {
-  border-bottom: 4rpx solid #F67F79;
+  border-bottom: 4rpx solid #f67f79;
 }
 
 .item-list {
-  width: 100%;  
-  padding-left: 10rpx; 
+  width: 100%;
+  /* height: 100%; */
+  padding-left: 10rpx;
+  /* background-color: gold; */
 }
 
 .select-age {
@@ -129,7 +134,7 @@ page {
 
 .age-box .age-list {
   font-size: 28rpx;
-  padding: 0 0 52rpx 28rpx;  
+  padding: 0 0 52rpx 28rpx;
   color: #999;
   border-bottom: 2rpx solid #e6e6e6;
 }
@@ -194,11 +199,11 @@ page {
   justify-content: center;
   width: 100%;
   top: 50%;
-  transform: translateY(-50%)
+  transform: translateY(-50%);
 }
 
 .no-result {
-  margin-top: 20rpx;  
+  margin-top: 20rpx;
   width: 100%;
   text-align: center;
   font-size: 32rpx;
