@@ -172,6 +172,25 @@ Page({
     //  console.logs(s);
     return s;
   },
+  //绑定支付方式
+  bindchangeIndex: function (e) {
+    var index = e.detail.value;
+    // console.log(e);
+    var name = e.currentTarget.dataset.name;
+    if (name === "courierIndex") {
+      this.setData({
+        courierIndex: index,
+      }, () => {
+        this.getOrderData(this.data.options)
+      });
+    } else if (name === "payIndex") {
+      this.setData({
+        payIndex: index,
+      })
+    } else {
+      console.log("Error");
+    }
+  },
   address_select: function(){
     wx.navigateTo({
       url: '/pages/address/address',

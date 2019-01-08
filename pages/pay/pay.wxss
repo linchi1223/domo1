@@ -265,13 +265,12 @@ page {
 .invoice{
   position: relative;
   background-color: #fff;
-  margin-top:20rpx; 
-  margin-bottom: 20rpx; 
+  margin:20rpx 0; 
   height: 80rpx;
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 80rpx;
 }
 .invoice .invoiceLabel{
   position: absolute;
@@ -279,7 +278,7 @@ page {
 }
 .invoice .text{
   position: absolute;
-  right: 50rpx;
+  right: 60rpx;
 }
 .text .text1{
   color: #F4302F;
@@ -288,7 +287,8 @@ page {
   position: absolute;
   height: 22rpx;
   width: 12rpx;
-  right: 24rpx;
+  right: 35rpx;
+  margin-top:30rpx; 
 }
 
 .tips{

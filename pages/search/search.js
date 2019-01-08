@@ -114,19 +114,19 @@ Page({
 
 
 
-  clickAge: function() {
-    if (this.data.dropDown) {
-      this.boxPullUp()
-    } else {
-      this.boxDropDown()
-    }
-  },
-  clickShade: function() {
-    this.boxPullUp()
-  },
-  stopMove: function(e) {
-    return
-  },
+  // clickAge: function() {
+  //   if (this.data.dropDown) {
+  //     this.boxPullUp()
+  //   } else {
+  //     this.boxDropDown()
+  //   }
+  // },
+  // clickShade: function() {
+  //   this.boxPullUp()
+  // },
+  // stopMove: function(e) {
+  //   return
+  // },
 
 
   searchItem: function() {

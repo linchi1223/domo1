@@ -19,15 +19,16 @@ Page({
   getlist() {
     var that = this;
     wx.request({
-      url: 'http://127.0.0.1/domo1/data/data.json',
-
+      // url: 'http://127.0.0.1/domo1/data/data.json',
+      url: app.globalData.address + '/api/productCategory/list.html',
       success(res) {
-        //console.log(res);
+        
         that.setData({
+
           zong: res.data.data
         })
 
-        that.getGoodsList(res.data.data[0].id)
+         that.getGoodsList(res.data.data[0].id)
       },
     })
   },
@@ -36,9 +37,10 @@ Page({
   getGoodsList(goodsId) {
     var that = this;
     wx.request({
-      url: 'http://127.0.0.1/domo1/data/data1.json',
+      // url: 'http://127.0.0.1/domo1/data/data1.json',
+      url: app.globalData.address + '/api/goods/list.html',
       data: {
-        goodsId: goodsId
+        categoryId: goodsId
       },
       success: function(res) {
        
@@ -46,14 +48,15 @@ Page({
         that.setData({
           goods: res.data.data.content
         })
+        
       },
     })
   },
   //按钮按下
   downbar(e) {
     var that = this;
-    // console.log(e);
-    
+    console.log(e.target.dataset.index);
+    console.log(e.target.dataset.cid)
     that.setData({
       indexon: e.target.dataset.index,
       goodsId: e.target.dataset.cid

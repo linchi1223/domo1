@@ -46,16 +46,7 @@ Page({
     }
   },
 
-  tqy: function () {
-    wx.navigateTo({
-      url: '/pages/weather/weather',
-    })
-  },
-  tapgo:function(){
-    wx.navigateTo({
-      url: '/pages/weather/weather',
-    })
-  },
+
   getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
