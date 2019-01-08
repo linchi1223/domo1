@@ -1,5 +1,7 @@
 /* 搜索框E */
-
+page{
+  font-family: Arial, Helvetica, sans-serif;
+}
 .select {
   background-color: #f0f3fc;
   width: 95%;
@@ -31,13 +33,14 @@
   font-size: 26rpx;
 }
 
+
 /* 轮播图片适配S  */
 
 .swiper_box {
   width: 100%;
-  height: 330rpx;
   margin: auto;
   padding: 0rpx;
+  
   /* background-color:forestgreen;  */
 }
 
@@ -45,7 +48,7 @@ swiper-item image {
   width: 100%;
   display: inline-block;
   overflow: hidden;
-  height: 330rpx;
+  height: 360rpx;
 }
 
 /* 轮播图片适配E  */
@@ -53,14 +56,14 @@ swiper-item image {
 /* 轮播点S */
 
 .dots {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   bottom: 20rpx;
   display: flex;
   justify-content: center;
   /* background-color: red; */
-  z-index: 10000;
+  z-index: 100;
 }
 
 .dots .dot {
@@ -77,5 +80,17 @@ swiper-item image {
   width: 14rpx;
   background-color: #fff;
 }
-
+.qinchu{
+  overflow: hidden;
+}
 /* 轮播点E */
+.xingxi{
+  background-color: greenyellow;
+  height: 100rpx;
+  width: 100%;
+  margin-top: 20rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: #000;
+  font-size: 35rpx;
+}

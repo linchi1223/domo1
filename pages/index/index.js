@@ -3,6 +3,7 @@ var app = getApp();
 Page({
 
   data: {
+    title:'推荐商品',
     swiperCurrent: 0, //轮播图圈圈在那个位置
     // banners: [{
     //     "id": 0,

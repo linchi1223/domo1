@@ -6,7 +6,15 @@
 </view>
 
 <scroll-view scroll-y>
-  <view>
+  <swiper class="img" autoplay="true" interval="5000" duration="1000" indicator-dots="true" circular="true" skip-hidden-item-layout='true'>
+    <block wx:for="{{banners}}" wx:key="id">
+      <swiper-item>
+         <image bindtap='tapBanner' data-id="{{item.goodsId}}" class='swiperimg' src="{{item.path}}" lazy-load='true'>
+         </image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- <view name='banner' class='banner'>
     <swiper class='swiper_box' circular="true" bindchange="swiperchange" >
       <block wx:for="{{banners}}" wx:key="id">
         <swiper-item>
@@ -15,6 +23,7 @@
         </swiper-item>
       </block>
     </swiper>
+<view class='dotkong'>
     <view class='dots'>
       <block wx:for="{{banners}}" wx:key="id">
         <view class="dot{{index == swiperCurrent ? ' active' : ''}}">
@@ -22,4 +31,11 @@
       </block>
     </view>
   </view>
+</view> -->
+
+  <view class='xingxi'>
+{{title}}
+  </view>
+
+
 </scroll-view>
