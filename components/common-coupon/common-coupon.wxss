@@ -1,0 +1,125 @@
+.common-coupon {
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 26rpx;
+  border-radius: 6rpx;
+  background: #fff;
+  overflow: hidden;
+}
+
+.common-coupon .top {
+  box-sizing: border-box;
+  padding-left: 28rpx;  
+  height: 120rpx;
+  white-space:nowrap;
+  position: relative;
+}
+.c-left{
+  position: absolute;
+  width: 185rpx;
+  height: 103rpx;
+  top: 40rpx;
+  left: 32rpx;
+}
+.c-left .ctype{
+  width: 100%;
+  height: 100%;
+  background-image: url("https://vverp1.oss-cn-shanghai.aliyuncs.com//uploadFile/944e4234-ddf6-4ada-8f29-36ec6ff6716b.png");
+  background-repeat: no-repeat;  
+  background-size: 100% 100%;
+}
+
+
+.common-coupon .bottom {
+  box-sizing: border-box;
+  padding-left: 28rpx;  
+  height: 68rpx;
+  line-height: 68rpx;
+}
+
+.common-coupon .circle {
+  position: absolute;
+  bottom: 60rpx;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 100%;
+  background: #f3f3f3;
+}
+
+.common-coupon .circle-l {
+  left: -10rpx;
+}
+
+.common-coupon .circle-r {
+  right: -10rpx;
+}
+
+.common-coupon .desc {
+  font-size: 22rpx;
+  color: #858585;
+}
+
+
+
+.common-coupon .symbol {
+  display: inline-block;
+  margin-right: 6rpx;
+  font-size: 24rpx;
+}
+
+.common-coupon .price {
+  display: inline-block;
+  font-size: 48rpx;
+}
+
+.common-coupon .info-wrapper {
+  position: absolute;
+  top: 40rpx;
+  left: 268rpx;
+  display: inline-block;
+}
+
+.common-coupon .condition {
+  font-size: 32rpx;
+  color: #323232;
+}
+
+.common-coupon .deadline {
+  margin-top: 4rpx;
+  font-size: 20rpx;
+  color: #858585;
+}
+
+.common-coupon .chapter {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -80rpx;
+  bottom: -80rpx;
+  width: 240rpx;
+  height: 240rpx;
+  border: 4rpx solid #cdcdcd;
+  border-radius: 100%;
+  transform: rotate(-45deg);
+}
+
+.common-coupon .inside {
+  padding-top: 45rpx;
+  box-sizing: border-box;
+  width: 212rpx;
+  height: 212rpx;
+  text-align: center;
+  border: 1rpx solid #cdcdcd;
+  border-radius: 100%;
+  font-size: 36rpx;
+  color: #cdcdcd;
+}
+
+.icon-select {
+  position: absolute;
+  width: 32rpx;
+  height: 32rpx;
+  top: 28rpx;
+  right: 36rpx;
+}

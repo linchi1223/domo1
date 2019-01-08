@@ -1,0 +1,22 @@
+<view class="edit">
+  <view class='content'>
+    <view class='name'>
+      <label>修改购买数量</label>
+    </view>
+    <view class='edit-btn'>
+      <label class="substract {{quantity<=1?'':'active'}}"  bindtap='Substract'>一</label>
+      <!-- <view class='quantity'> -->
+        <input type='number' value='{{quantity}}'class='quantity' focus='true' bindinput='setNum' placeholder='1'></input>
+      <!-- </view> -->
+      <label class='add' bindtap='Add'>十</label>
+    </view>
+  </view>
+  <view class='btn'>
+    <view class='cancel' bindtap='cancel'>
+      <label>取消</label>
+    </view>
+    <view class='sure' bindtap='sure'>
+      <label>确认</label>
+    </view>
+  </view>
+</view>

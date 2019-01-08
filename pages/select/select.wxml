@@ -1,7 +1,16 @@
-<view>
-<view class='select'>
-  <image src='/img/search.png'></image>
-  <input placeholder='搜索商品' bindinput='input' auto-focus='true'></input>
+<view class='search'>
+  <view class='select'>
+    <image src='/img/search.png'></image>
+     <input  type='text' confirm-type="search" bindinput='input' auto-focus='true'  bindconfirm='search' placeholder='搜索商品'></input>
+  </view>
+  <view class='cancel' bindtap='cancel'>取消</view>
 </view>
-<view class='cancel' bindtap='cancle'>取消</view>
+<view class='record'>
+  <view class='record-title'>
+    <text class='record-text'>搜索历史</text>
+    <image src='/img/img/icon-delete.png' class='record-image' bindtap='clearRecord'></image>
+  </view>
+  <block wx:for="{{record}}" wx:for-item="recorditem" wx:key="">
+    <label class='body-list' bindtap='goToSearch' data-value="{{recorditem}}" data-index='{{index}}'>{{recorditem}}</label>
+  </block>
 </view>

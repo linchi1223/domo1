@@ -1,0 +1,92 @@
+function formatNumber(n) {
+  n = n.toString()
+  return n[1] ? n : '0' + n
+}
+
+function formatTime(number, format) {
+
+  var formateArr = ['Y', 'M', 'D', 'h', 'm', 's'];
+  var returnArr = [];
+
+  var date = getDate(number);
+  returnArr.push(date.getFullYear());
+  returnArr.push(formatNumber(date.getMonth() + 1));
+  returnArr.push(formatNumber(date.getDate()));
+
+  returnArr.push(formatNumber(date.getHours()));
+  returnArr.push(formatNumber(date.getMinutes()));
+  returnArr.push(formatNumber(date.getSeconds()));
+
+  for (var i = 0; i < returnArr.length; i++) {
+    format = format.replace(formateArr[i], returnArr[i]);
+  }
+  return format;
+}
+
+function getTodayStr() {
+  var date = getDate()
+
+  var year = date.getFullYear()
+  var month = date.getMonth() + 1
+  var day = date.getDate()
+
+  return year + '-' + month + '-' + day
+}
+
+// function legalAdult(birthday) {
+//   var today = getDate()
+//   birthday = getDate(birthday)
+
+//   var tYear = today.getFullYear()
+//   var bYear = birthday.getFullYear()
+//   var tMonth = today.getMonth()
+//   var bMonth = birthday.getMonth()
+//   var tDay = today.getDate()
+//   var bDay = birthday.getDate()
+
+//   if (tYear - bYear > 18) {
+//     return '成人'
+//   }
+
+//   if (tYear - bYear === 18) {
+//     if (bMonth > tMonth) {
+//       return '成人'
+//     } else if (bMonth === tMonth) {
+//       if (bDay >= tDay) {
+//         return '成人'
+//       }
+//     }
+//   }
+
+//   return '儿童'
+// }
+function toFix(num, length = 2) {
+  return num.toFixed(length)
+}
+
+function getProduct(products){
+  var str="";
+  if(!products)
+  {
+    return ;
+  }
+  for(var i=0;i<products.length;i++)
+  {
+    if(i==0)
+    {
+      str = str  + products[i].value;
+    }
+    else
+    {
+      str = str + " " + products[i].value;
+    } 
+  }
+  return str;
+}
+
+module.exports = {
+  formatTime: formatTime,
+  getTodayStr: getTodayStr,
+  toFix: toFix,
+  getProduct: getProduct
+}

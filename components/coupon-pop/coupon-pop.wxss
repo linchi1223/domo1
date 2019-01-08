@@ -1,0 +1,51 @@
+.coupon-pop{
+  position: relative;
+  height: 600rpx;
+  width: 524rpx;
+  background-color: #FFFFFF;
+}
+.coupon-icon{
+position: absolute;
+top: 60rpx;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+.icon-img{
+  height: 135rpx;
+  width: 176rpx;
+}
+.getInfo{
+  position: absolute;
+  width: 100%;
+  top: 256rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.getInfo .title{
+  font-size: 36rpx;
+  color: #333333;
+}
+.getInfo .text{
+  font-size: 20rpx;
+  color: #ACACAC;
+  margin-top: 20rpx;
+}
+.surebtn{
+  position: absolute;
+  height: 80rpx;
+  width: 274rpx;
+  top: 446rpx;
+  left: 124rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F67F79;
+}
+.surebtn .text{
+  font-size: 30rpx;
+  color: #FFFFFF;
+}

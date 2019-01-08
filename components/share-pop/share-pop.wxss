@@ -1,0 +1,59 @@
+.share-pop{
+  position: relative;
+  width: 100%;
+  height: 350rpx;
+}
+.share-pop .success{
+  position: absolute;
+  width: 100%;
+  height: 80rpx;
+  top: 0;
+  text-align: center;
+}
+.success label{
+  color: #e83a52;
+  font-size: 50rpx;
+  font-weight: bolder;
+}
+.share-pop .price{
+  position: absolute;
+  top: 32%;
+  width: 36%;
+  height: 60rpx;
+  left: 15%;
+  text-align: center;
+}
+.price .sign{
+  color: #e83a52;
+  font-size: 30rpx;
+  font-weight: bolder;
+}
+.price .number{
+  color: #e83a52;
+  font-size: 50rpx;
+  font-weight: bolder;
+}
+.share-pop .btn{
+  box-sizing: border-box;
+  position: absolute;
+  top: 53%;
+  width: 100%;
+  height: 80rpx;
+}
+.btn view{
+  box-sizing: border-box;
+  height: 100%;
+  line-height: 80rpx;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  z-index: 2;
+  border-bottom-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  border-top-left-radius: 10rpx;
+  color: #e83a52;
+  text-align: center;
+}
+
+

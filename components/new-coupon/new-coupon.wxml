@@ -1,0 +1,34 @@
+<wxs src="../../common/common.wxs" module="util"/>
+<view class="newCoupon">
+  <view class='coupon'>
+    <view class='coupon-content'>
+      <view class='content-name'>
+        <label class="text">￥</label>
+        <label class='money'>{{coupon.priceExpression}}</label>
+        <label class='text'>店铺优惠券</label>
+      </view>
+      <view class='content-condition'>
+        <label>订单金额满{{coupon.minimumPrice}}元可使用</label>
+      </view>
+      <view class='content-date'>
+        <label>有效日期{{util.formatTime(coupon.beginDate,'Y-M-D')}}-{{util.formatTime(coupon.endDate,'Y-M-D')}}</label>
+      </view>
+    </view>
+    <view class='middle'>
+      <view class='topArc' ></view>
+      <view class='line'></view>
+      <view class='bottomArc' ></view>
+    </view>
+    <view class='btn' bindtap='getnewCoupon'>
+      <view class='btn-get'>
+        <label>立即领取</label>
+      </view>
+    </view>
+
+    <view class='geted' wx:if="{{isGeted}}">
+        <view class='text'>
+          <label>已领取</label>
+        </view>
+      </view>
+  </view>
+</view>

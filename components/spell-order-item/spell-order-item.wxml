@@ -1,0 +1,30 @@
+<view class="order-item">
+  <view class='item-label'>
+    <view class="label-text">拼团中，还差4人成团</view>
+    <view class='label-time'>剩00天00小时00分钟00秒</view>
+  </view>
+  <view class='item-body'>
+    <view class='body-left'>
+      <image ></image>
+    </view>
+
+    <view class='body-right'>
+      <view class='right-name'>加厚夹棉保暖四件套</view>
+      <view class='right-specifications'>
+        <view class='specificationss-item' wx:for="{{test}}" wx:key="">
+          <label class='item-tittle'>尺寸:</label>
+          <label class='item-text'>18cm  </label>
+        </view>
+      </view>
+      <view class='right-quantity-price'>
+        <label class='quantity'>X1</label>
+        <label class='price'>￥1.00</label>
+      </view>
+    </view>
+  </view>
+  <view class='item-btn'>
+    <view class='btn-orderDetail' wx:if="{{order}}">订单详情</view>
+    <view class='btn-spellDetail' bindtap='goToSpellDetail' wx:if="{{order}}">拼团详情</view>
+    <view class='btn-pay' wx:else>去支付</view>
+  </view>
+</view>

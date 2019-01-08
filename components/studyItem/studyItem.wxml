@@ -1,0 +1,16 @@
+<view class="studyItem">
+  <view class='image'>
+    <image src='{{item.img}}'></image>
+  </view>
+  <view class='studyItem-content'>  
+    <view class='content-title'>{{item.name}}</view>
+    <view class='content-classify'>
+      <!-- <view class='price'>￥336</view>
+      <view class='class'>初级</view> -->
+      <view class='participants'>
+        <image src='/img/meD.png' class='participants-image'></image>
+        <view class='participants-number'>323432432432432</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,51 @@
+.head-container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.head-container .item-img{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: inline-block;
+  /* border: 1px solid #E56964; */
+}
+.item-img  image{
+  height: 100%;
+  width: 100%;
+}
+
+.head-container .no-people{
+  height: 100%;
+  width: 100%;
+  border: 2px dashed #E4728B;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70rpx;
+  background-color: #FFFAF2;
+  font-size: 40rpx;
+  color: #E4728B;
+  display: inline-block
+}
+
+.head-container .nickname{
+  position: absolute;
+  bottom: -9rpx;
+  left: 12rpx;
+  height: 30rpx;
+  width: 54rpx;
+  text-align: center;
+  line-height: 30rpx;
+  background-color: #EC6960;
+  color: #FFFFFF;
+  font-size: 20rpx;
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+  border-bottom-left-radius: 16rpx;
+  border-bottom-right-radius: 16rpx;
+}

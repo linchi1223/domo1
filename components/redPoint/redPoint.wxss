@@ -1,0 +1,7 @@
+/* components/redPoint/redPoint.wxss */
+.redPoint{
+  height: 12rpx;
+  width: 12rpx;
+  border-radius:50%; 
+  background-color: #F55c65;
+}

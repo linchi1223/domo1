@@ -1,0 +1,15 @@
+<view class="head-container">
+
+  <view class='item-img'>
+    <image src='/img/order/omit.png'></image>
+  </view>
+
+  <view class='no-people' wx:if="{{test}}">?</view>
+
+  <view class='item-img' wx:if="{{test}}">
+    <image src='/img/order/omit.png'></image>
+  </view>
+
+  <view class='nickname'>团长</view>
+
+</view>

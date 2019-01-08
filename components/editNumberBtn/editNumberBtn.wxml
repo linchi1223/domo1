@@ -1,0 +1,9 @@
+<view class="editnumberbtn">
+  <view class="substract {{quantity>1?'active':''}}"  bindtap='substract'>
+    <label>-</label>
+  </view>
+  <input class='number' type='number' disabled='true' value='{{quantity}}' bindtap='showeditPop'></input>
+  <view class='add' bindtap='add'>
+    <label>+</label>
+  </view>
+</view>

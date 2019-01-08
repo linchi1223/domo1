@@ -1,0 +1,106 @@
+.newCoupon{
+  height: 100%;
+  width: 100%;
+  /* background: linear-gradient(to right,#e71819,#b20e0e) */
+  overflow: hidden;
+}
+.newCoupon .coupon{
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  background-color: #FDF3E9;
+  color: #D98E4D;
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+  border-bottom-left-radius: 16rpx;
+  border-bottom-right-radius: 16rpx;
+  overflow: hidden;
+}
+.coupon .coupon-content{
+  height: 100%;
+  box-sizing: border-box;
+  width: 65%;
+  padding-top: 2%;
+  padding-left: 4%;
+}
+.coupon-content .content-condition{
+  font-size: 78%;
+}
+.coupon-content .content-date{
+  font-size: 78%;
+}
+
+.coupon-content .content-name .text{
+  font-size: 78%;
+}
+.content-name .money{
+  color: #E1934E;
+  font-size: 100%;
+}
+
+.coupon .middle{
+  height: 100%;
+  width: 30rpx;
+  position: relative;
+  overflow: hidden;
+}
+.middle .topArc{
+  height: 30rpx;
+  width: 30rpx;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  top: -15rpx;
+}
+.middle .line{
+  position: absolute;
+  height: 150rpx;
+  width: 2rpx;
+  border-right: 1px dashed #DBD1BB; 
+  box-sizing: border-box;
+  left: 14rpx;
+  top: 15rpx;
+  overflow: hidden;
+}
+.middle .bottomArc{
+  height: 30rpx;
+  width: 30rpx;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  bottom: -15rpx;
+}
+.coupon .btn{
+  position: relative;
+  height: 100%;
+  width: 30%;
+}
+.btn .btn-get{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 34%;
+}
+.coupon .geted{
+  position: absolute;
+  height: 51%;
+  width: 14%;
+  border: 1px solid #DBD1BB;
+  border-radius: 50%;
+  font-size: 70%;
+  text-align: center;
+  line-height: 70rpx;
+  bottom: -18rpx;
+  right: -12rpx;
+  transform: rotate(-40deg);
+  color: #DBD1BB;
+}
+.geted .text{
+  height: 100%;
+  width: 100%;
+}

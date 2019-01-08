@@ -1,0 +1,9 @@
+<view class="star">
+  <image class="icon-star" wx:for="{{ stars }}" wx:key="" src="/img/common/star-{{ item }}.png">
+  <view class="item">
+  <view class="left" data-score="{{index + 0.5}}"  bindtap="{{selectLeft}}"></view>
+  <view class="right" data-score="{{index + 1}}"   bindtap="{{selectRight}}"></view>
+  </view>
+  </image>
+  <text class="score" style="display:{{xianshi}}">{{ score*2 }}</text>
+</view>

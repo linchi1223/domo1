@@ -36,9 +36,13 @@ App({
   },
   globalData: {
     userInfo: null,
-    address: 'https://tooth.vverp.com'
+    address: 'https://tooth.vverp.com',
+    openId: '', //打开的id
+    inviteCode: '', //邀请码
+    exhibitionId: '', //展示Id
+    isNew: '', //是否为新
   },
-  //获取用户信息no3
+  //设置用户信息no3
   setUserInfo: function (userInfo) {
     wx.request({
       url: this.globalData.address + '/api/wechat/setUserInfo.html',

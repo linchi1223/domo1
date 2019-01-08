@@ -23,7 +23,8 @@ Page({
    */
   onLoad: function(options) {
     var that = this;
-    var goods_info = JSON.parse(options.goods_info) //json字符串转对象
+    var goods_info = JSON.parse(options.goods_info) //json字符串转对象  goodnews.js
+    // var user_info= JSON.parse(options.user_info)
     that.setData({
       id: goods_info.id,
       number: goods_info.number,
@@ -173,7 +174,7 @@ Page({
   },
   address_select: function(){
     wx.navigateTo({
-      url: '',
+      url: '/pages/address/address',
       success: function(res) {},
       fail: function(res) {},
       complete: function(res) {},

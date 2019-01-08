@@ -1,0 +1,15 @@
+<view class="notice-container">
+  <view class='notice'>
+    <view class='header'>
+      <image class='headerimg' src='/img/common/notice.png'></image>
+      <label class='headertext'>公告</label>
+    </view>
+    <view class='notice-text'>
+      <import src="../../wxParse/wxParse.wxml" />
+      <template is="wxParse" data="{{wxParseData:detail.nodes}}" />
+    </view>
+    <view class='surebtn' bindtap='goback'>
+      <label class='btn-text'>知道了</label>
+    </view>
+  </view>
+</view>

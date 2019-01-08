@@ -1,0 +1,14 @@
+<view class="container">
+ <view class='coupon-pop'>
+  <view class='coupon-icon'>
+    <image class='icon-img' src='/img/common/coupon-pop.png'></image>
+  </view>
+  <view class='getInfo'>
+    <label class='title'>恭喜您，领取成功</label>
+    <label class='text'>优惠券已经放入您的账户，快去使用吧</label>
+  </view>
+  <view class='surebtn' bindtap='sure'>
+    <label class='text' >确定</label>
+  </view>
+ </view>
+</view>

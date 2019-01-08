@@ -1,0 +1,4 @@
+<view class="loading">
+  <image class="icon" src="/img/loading.gif"></image>
+  <view class="title">{{ text }}</view>
+</view>

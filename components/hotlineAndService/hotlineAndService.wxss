@@ -1,0 +1,28 @@
+/* components/hotlineAndService/hotlineAndService.wxss */
+.hotlineAndService{
+  height: 300rpx;
+  width: 100rpx;
+  background-color: rgba(0, 0, 0, 0);
+  /* background-color: white; */
+  /* position: relative; */
+}
+.hotlineAndService .image-view{
+  position: relative;
+  box-sizing: border-box;
+  height: 100rpx;
+  width: 100rpx;
+  margin-top: 30rpx;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+.image-view button{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  background-color: red;
+  opacity: 0;
+}
+.image-view image{
+  display: inline;
+}

@@ -1,0 +1,20 @@
+/* components/no-result/no-result.wxss */
+
+.no-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;  
+}
+
+.no-result .image {
+  margin: 112rpx 0 70rpx 0;  
+  width: 332rpx;
+  height: 290rpx;
+}
+
+.no-result .title {
+  font-size: 38rpx;
+  color: #808080;
+}

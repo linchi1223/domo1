@@ -1,0 +1,68 @@
+// 倒计时函数
+
+function countdown(before,format) {
+
+  var before = getDate(before);
+  var today = getDate();
+  var timeArr = [];
+
+  var totalSeconds = (today - before) / 1000;
+  totalSeconds = parseInt(totalSeconds);
+  var seconds, minutes, hours, days, temp;
+  var count;
+
+  days = totalSeconds / (60 * 60 * 24);
+  days = parseInt(days);
+  timeArr.push(filling(days));
+
+  temp = totalSeconds - days * (60 * 60 * 24)
+  hours = temp / (60 * 60);
+  hours = parseInt(hours);
+  timeArr.push(filling(hours));
+
+  temp = temp - hours * (60 * 60);
+  minutes = temp / 60;
+  minutes = parseInt(minutes);
+  timeArr.push(filling(minutes));
+
+  seconds = temp - minutes * 60;
+  timeArr.push(filling(seconds));
+
+  // count = filling(days) + ':' + filling(hours) + ":" + filling(minutes) + ":" + filling(seconds);
+  count = getFormatTime(format,timeArr);
+  return count;
+}
+
+function filling(timer) {
+  var time;
+  if (timer < 10) {
+    time = '0' + timer;
+  }
+  else {
+    time = '' + timer;
+  }
+  return time;
+}
+
+function getFormatTime(format,timeArray){
+  var formatArr = ['D', 'h', 'm', 's'];
+  var j=0;
+  if(timeArray.length ==3){
+    j = 1;
+  }
+  else{
+    j = 0;
+  }
+
+  for(var i=0;(i<timeArray.length)&&(j<timeArray.length);i++,j++)
+  {
+    format = format.replace(formatArr[j],timeArray[i]);
+  }
+
+  return format;
+
+}
+
+module.exports = {
+  countdown: countdown,
+}

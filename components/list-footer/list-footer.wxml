@@ -1,0 +1,4 @@
+<view class="list-footer">
+  <image wx:if="{{ type === 'loading' }}" class="icon" src="/img/img/common/loading.gif"></image>
+  <text class="text">{{ title }}</text>
+</view>

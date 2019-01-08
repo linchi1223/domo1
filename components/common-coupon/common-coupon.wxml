@@ -1,0 +1,25 @@
+<view class="common-coupon" data-coupon-full="{{ coupon.full }}" bindtap='clickCoupon'>
+  <view class="top">
+    <view class="c-left">
+      <view class="ctype"></view>
+    </view>
+    <view class="info-wrapper">
+      <view class="condition">{{ coupon.name }}</view>
+      <view class="deadline">使用期限: {{ coupon.beginDate }} - {{ coupon.endDate }}</view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="desc">{{ coupon.rule ? coupon.rule : '' }}</view>
+  </view>
+  <view class="circle circle-l"></view>
+  <view class="circle circle-r"></view>
+
+  <view wx:if="{{ status !== 'unused' }}" class="chapter">
+    <view wx:if="{{ status === 'used' }}" class="inside">已使用</view>
+    <view wx:if="{{ status === 'expired' }}" class="inside">已过期</view>
+  </view>
+
+  <block wx:if="{{ canSelect }}">
+    <image class="icon-select" src="{{ selected ? '/img/icon-checked.png' : '/img/icon-uncheck.png' }} "></image>
+  </block>
+</view>

@@ -1,0 +1,62 @@
+<view class="search-wrapper" catchtouchmove='stopMove'>
+  <image class='icon' src='/img/img/serach.png'></image>
+  <input class="search-input" confirm-type="search" bindconfirm="search" value="{{ searchText }}"></input>
+  <view class='search-cancel' bindtap='searchCancel'>取消</view>
+</view>
+
+<view class="order-items" catchtouchmove='stopMove'>
+  <view wx:for="{{orderList}}" class="item {{orderProperty=== item.property ? 'active' : '' }}" data-property='{{ item.property }}' bindtap='clickOrder' wx:key="{{ index }}">{{ item.name }}
+
+    <block wx:if="{{ item.property === 'price' }}">
+      <block wx:if="{{ item.direction === 'normal' }}">
+        <image class="icon-sort" src="/img/img/sort-top.png"></image>
+        <image class="icon-sort" src="/img/img/sort-bottom.png"></image>
+      </block>
+      <block wx:if="{{ item.direction === 'asc' }}">
+        <image class="icon-sort" src="/img/img/sort-top-active.png"></image>
+        <image class="icon-sort" src="/img/img/sort-bottom.png"></image>
+      </block>
+      <block wx:if="{{ item.direction === 'desc' }}">
+        <image class="icon-sort" src="/img/img/sort-top.png"></image>
+        <image class="icon-sort" src="/img/img/sort-bottom-active.png"></image>
+      </block>
+    </block>
+
+  </view>
+
+</view>
+
+<!-- <view hidden='{{ !dropDown }}' class="age-box" catchtouchmove='stopMove'>
+  <view class="title">年龄</view>
+  <view class="age-list">
+    <view wx:for="{{ ageList }}" wx:key="{{ item.id }}" data-id="{{ item.id }}" data-title="{{ item.title }}" class="age-btn {{ generation === item.title ? 'active' : '' }}" bindtap='clickAgeBtn'>{{ item.title }}</view>
+  </view>
+  <view class='btn-wrapper'>
+    <view class="btn cancel" data-info="cancel" bindtap='clickBtn'>取消</view>
+    <view class="btn confirm" data-info="confirm" bindtap='clickBtn'>确定</view>
+  </view>
+</view> -->
+
+<view class="item-list">
+  <common-item wx:for="{{pageList}}" wx:key="{{item.id}}" commodity="{{item}}"></common-item>
+</view>
+
+<view class="no-result" hidden="{{!noResult}}">
+  <block wx:if="{{noResult}}">
+    <no-result icon="/img/img/common/commod.png" title="暂无商品"></no-result>
+  </block>
+</view>
+
+<view class="loading-wrapper" hidden="{{ !loading }}">
+  <loading></loading>
+</view>
+
+<view hidden="{{ more }}" class="list-footer-wrapper">
+  <list-footer></list-footer>
+</view>
+<view hidden='{{ !pageLoading }}' class="list-footer-wrapper">
+  <list-footer type="loading" title="加载中"></list-footer>
+</view>
+
+
+<view hidden='{{ !dropDown }}' class="shade" catchtouchmove='stopMove' catchtap='clickShade'></view>

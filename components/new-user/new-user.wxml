@@ -1,0 +1,12 @@
+<view class="user-coupon">
+
+<image src='https://vverp1.oss-cn-shanghai.aliyuncs.com//uploadFile/df024790-2e78-452c-b838-b97c756b890b.png' class='backimage'>
+</image>
+  <view class='coupon-list' catchtouchmove='stopMove'>
+    <scroll-view scroll-y style="{{couponList.length<4?'':'height: 100%'}}" >
+      <view class='item' wx:for="{{couponList}}" wx:key="">
+        <new-user-coupon coupon="{{item}}"></new-user-coupon>
+      </view>
+    </scroll-view>
+  </view>
+</view>

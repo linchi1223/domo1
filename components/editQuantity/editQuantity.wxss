@@ -1,0 +1,109 @@
+.edit{
+  height: 320rpx;
+  width: 550rpx;
+  background-color: #FFFFFF;
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+  border-bottom-left-radius: 16rpx;
+  border-bottom-right-radius: 16rpx;
+
+  box-sizing: border-box;
+}
+.edit .content{
+  position: relative;
+  height: 240rpx;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+}
+.content .name{
+  position: absolute;
+  height: 60rpx;
+  width: 100%;
+  text-align: center;
+  top: 20rpx;
+}
+.name label{
+  color: #222222;
+  font-size: 30rpx;
+}
+.content .edit-btn{
+  position: absolute;
+  height: 74rpx;
+  box-sizing: border-box;
+  width: 344rpx;
+  top: 100rpx;
+  left: 100rpx;
+  display: flex;
+  border: 1px solid #E6E6E6;
+}
+.edit-btn .substract{
+  height: 100%;
+  width: 72rpx;
+  line-height: 70rpx;
+  border-right: 1px solid #E6E6E6;
+  display: inline-block;
+  text-align: center;
+  font-size: 26rpx;
+  color: #E6E6E6;
+}
+
+.edit-btn .substract.active{
+  color: #222222;
+}
+.edit-btn .quantity{
+  height: 100%;
+  width: 190rpx;
+  line-height: 64rpx;
+  display: inline-block;
+  text-align: center;
+  font-size: 32rpx;
+  color: #222222;
+}
+
+.edit-btn .add{
+  height: 100%;
+  width: 74rpx;
+  line-height: 70rpx;
+  border-left: 1px solid #E6E6E6;
+  display: inline-block;
+  text-align: center;
+  font-size: 26rpx;
+  color: #222222;
+}
+.edit .btn{
+  height: 82rpx;
+  position: relative;
+  border-bottom-left-radius: 16rpx;
+  border-bottom-right-radius: 16rpx;
+  box-sizing: border-box;
+}
+.btn .cancel{
+  height: 100%;
+  position: absolute;
+  left: 0rpx;
+  line-height: 80rpx;
+  width: 50%;
+  text-align: center;
+  border-bottom-left-radius: 16rpx;
+  box-sizing: border-box;
+  border-top: 1px solid #E6E6E6;
+  background-color: #FFFFFF;
+}
+
+.btn .sure{
+  
+  position: absolute;
+
+  right: 0rpx;
+  height: 100%;
+  width: 50%;
+  line-height: 80rpx;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #DD4540;
+  border-bottom-right-radius: 16rpx;
+  box-sizing: border-box;
+}

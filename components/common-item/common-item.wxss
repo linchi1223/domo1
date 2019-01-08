@@ -1,0 +1,80 @@
+.common-item {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 10rpx; 
+  width: 360rpx;
+  height: 526rpx;
+  background: #fff;
+  margin-top: 10rpx;
+  overflow: hidden;
+}
+.common-item .newGoods{
+  position: absolute;
+
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+  right: 20rpx;
+  top: 20rpx;
+  z-index: 100;
+
+}
+.newGoods image{
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+}
+
+.common-item .solden{
+  position: absolute;
+  box-sizing: border-box;
+  height: 72%;
+  width: 100%;
+  border-radius: 50%;
+  top: 0rpx;
+  right: 0rpx;
+  z-index: 100;
+}
+.solden image{
+  height: 96%;
+  width: 100%;
+  border-radius: 50%;
+}
+.common-item .image {
+  position: absolute;
+  width: 100%;
+  height: 396rpx;
+}
+
+
+.common-item .label {
+
+  width: 340rpx;
+
+  position: absolute;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  top: 420rpx;
+  left: 20rpx;
+  font-size: 32rpx;
+  line-height: 32rpx;
+  color: #555555;
+}
+
+.common-item .price {
+  position: absolute;
+  top: 466rpx;
+  font-size: 32rpx;
+  /* right: 5%; */
+   left: 15rpx;
+  color: #e64340;
+}
+.common-item .sell{
+  position: absolute;
+  top: 466rpx;
+  font-size: 28rpx;
+  color: #999;
+  right:5%;
+}

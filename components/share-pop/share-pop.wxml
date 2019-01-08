@@ -1,0 +1,13 @@
+<wxs src="../../common/common.wxs" module="tools"/>
+<view class="share-pop">
+  <view class='success'>
+    <label>分享成功!</label>
+  </view>
+  <view class='price'>
+    <label class='sign'>￥</label>
+    <label class='number'>{{tools.toFix(price)}}</label>
+  </view>
+  <view class='btn'>
+    <view bindtap='goToGoods'>立即使用</view>
+  </view>
+</view>

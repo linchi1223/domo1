@@ -1,0 +1,9 @@
+<view class="hotlineAndService">
+  <view class='image-view' wx:if="{{hotline.isHome}}" bindtap='callNumber'>
+    <image src='{{hotline.icon}}'></image>
+  </view>
+  <view class='image-view' wx:if="{{service.isHome}}">
+    <button open-type='contact'></button>
+    <image src='{{service.icon}}'></image>
+  </view>
+</view>

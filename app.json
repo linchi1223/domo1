@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/address/address",
     "pages/addressadd/addressadd",
     "pages/find/find",
@@ -7,9 +8,9 @@
     "pages/pay/pay",
     "pages/user/user",
     "pages/cart/cart",
-    "pages/index/index",
     "pages/temp/temp",
-    "pages/select/select"
+    "pages/select/select",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

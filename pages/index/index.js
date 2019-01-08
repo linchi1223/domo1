@@ -1,42 +1,43 @@
 // pages/ok/ok.js
+var app = getApp();
 Page({
 
   data: {
     swiperCurrent: 0, //轮播图圈圈在那个位置
-    banners: [{
-        "id": 0,
-        "path": '/img/4.png',
-        "url": null,
-        "goodsId": "311",
-        "sn": "2018120324139",
-        "isExhibition": false
-      },
+    // banners: [{
+    //     "id": 0,
+    //     "path": '/img/4.png',
+    //     "url": null,
+    //     "goodsId": "311",
+    //     "sn": "2018120324139",
+    //     "isExhibition": false
+    //   },
 
-      {
-        "id": 1,
-        "path": '/img/1.png',
-        "url": null,
-        "goodsId": "312",
-        "sn": "2018121324240",
-        "isExhibition": false
-      },
-      {
-        "id": 2,
-        "path": '/img/2.png',
-        "url": null,
-        "goodsId": "163",
-        "sn": "2018080721716",
-        "isExhibition": false
-      },
-      {
-        "id": 3,
-        "path": '/img/3.png',
-        "url": null,
-        "goodsId": "8",
-        "sn": null,
-        "isExhibition": false
-      }
-    ]
+    //   {
+    //     "id": 1,
+    //     "path": '/img/1.png',
+    //     "url": null,
+    //     "goodsId": "312",
+    //     "sn": "2018121324240",
+    //     "isExhibition": false
+    //   },
+    //   {
+    //     "id": 2,
+    //     "path": '/img/2.png',
+    //     "url": null,
+    //     "goodsId": "163",
+    //     "sn": "2018080721716",
+    //     "isExhibition": false
+    //   },
+    //   {
+    //     "id": 3,
+    //     "path": '/img/3.png',
+    //     "url": null,
+    //     "goodsId": "8",
+    //     "sn": null,
+    //     "isExhibition": false
+    //   }
+    // ]
   },
   // 点击轮播图进行页面跳转
   tapBanner: function(e) {
@@ -51,8 +52,8 @@ Page({
 
       // console.log('1');
       wx.navigateTo({
-        // url: "/pages/goodnews/goodnews?id=" + e.currentTarget.dataset.id
-        url:"/pages/goodnews/goodnews"
+        url: "/pages/goodnews/goodnews?id=" + e.currentTarget.dataset.id
+        // url: "/pages/goodnews/goodnews"
       })
     }
   },
@@ -71,7 +72,20 @@ Page({
   },
 
 
-
+  /**
+   * 后台请求轮播图
+   */
+  getBanners: function() {
+    var that = this;
+    wx.request({
+      url: app.globalData.address + '/api/ad/list.html',
+      success: function(res) {
+        that.setData({
+          banners: res.data.data
+        });
+      }
+    })
+  },
 
 
 
@@ -82,7 +96,7 @@ Page({
    */
   onLoad: function(options) {
     // console.log(banner);
-
+    this.getBanners();
   },
 
   /**

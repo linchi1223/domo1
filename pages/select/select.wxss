@@ -1,4 +1,10 @@
 
+page{
+  font-size: 26rpx;
+}
+.search{
+  clear: both;
+}
 /* 搜索框S */
 .select {
   background-color: #f0f3fc;
@@ -41,5 +47,41 @@ font-size: 26rpx;
   margin: 0 20rpx ;
   color: #000;
   font-size: 30rpx;
+  z-index: 10;
 }
 /* 取消E */
+
+.record-title{
+  position: relative;
+}
+.record-text{
+  color: #666666;
+  margin-left: 38rpx;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  display: inline-block;
+}
+.record-image{
+  position: absolute;
+  /* top: 20rpx; */
+  right: 6rpx;
+  height: 33rpx;
+  width: 36rpx;
+  padding: 20rpx;
+}
+.body-list{
+  box-sizing: border-box;
+  background-color: #F2F2F2;
+  /* background-color: #dddddd; */
+  border: 1px solid #ECECEC;
+  font-size: 26rpx;
+  line-height: 20rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  margin-left: 38rpx;
+  display: inline-block;
+  padding: 20rpx 30rpx;
+  border-radius: 12rpx;
+  color: #555555;
+  z-index: 100
+}

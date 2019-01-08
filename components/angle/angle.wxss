@@ -1,0 +1,26 @@
+.angle{
+  height: 36rpx;
+  width: 48rpx;
+  background-color: #E7352E;
+  border-top-left-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  box-sizing: border-box;
+
+}
+.angle .number{
+  font-size: 26rpx;
+  text-align: center;
+  color: #FFFFFF;
+}
+.number label{
+  height: 100%;
+  line-height: 36rpx;
+  width: 50rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+}
+

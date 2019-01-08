@@ -8,9 +8,9 @@ Page({
     username: '池思敏',
     usertel: '15068676937',
     useraddress: '浙江省 宁波市 鄞州区 首南街道 ',
-    useraddressxiangxi:'浙江大学宁波理工学院',
-    typeadd:'add',
-    typealter:'alter'
+    useraddressxiangxi: '浙江大学宁波理工学院',
+    typeadd: 'add',
+    typealter: 'alter'
   },
 
   /**
@@ -61,22 +61,28 @@ Page({
   onReachBottom: function() {
 
   },
-
+  returninfor: function(e) {
+    var that = this;
+    console.log(e);
+    console.log(that);
+   
+  },
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function() {
 
   },
-  addressadd: function(e) {e.target.dataset.lx
+  addressadd: function(e) {
+    e.target.dataset.lx
     var that = this;
     wx.navigateTo({
       url: '/pages/addressadd/addressadd?information=' + JSON.stringify({
-        username:that.data.username,
-        usertel:that.data.usertel,
-        useraddress:that.data.useraddress,
-        useraddressxiangxi:that.data.useraddressxiangxi,
-        type:e.target.dataset.lx
+        username: that.data.username,
+        usertel: that.data.usertel,
+        useraddress: that.data.useraddress,
+        useraddressxiangxi: that.data.useraddressxiangxi,
+        type: e.target.dataset.lx
       }),
     })
   }

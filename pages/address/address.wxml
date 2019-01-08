@@ -2,7 +2,7 @@
   <scroll-view>
     <view class='zong'>
       <view class='usertb'>{{username[0]}}</view>
-      <view class='center'>
+      <view class='center' bindtap='returninfor'>
         <view class='centerup'>
           <view class='username'>{{username}}</view>
           <view class='usertel'>{{usertel}}</view>

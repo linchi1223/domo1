@@ -1,0 +1,5 @@
+<!--components/no-result/no-result.wxml-->
+<view class='no-result'>
+<image src='{{icon}}' class='image'></image>
+<view class='title'>{{title}}</view>
+</view>

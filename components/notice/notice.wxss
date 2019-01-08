@@ -1,0 +1,57 @@
+@import "../../wxParse/wxParse.wxss";
+.notice{
+  display: flex;
+  height: 660rpx;
+  width: 550rpx;
+  background-color: #FFFFFF;
+
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: 28rpx;
+  border-top-left-radius: 28rpx; 
+  border-top-right-radius: 28rpx;
+  border-bottom-right-radius: 28rpx;
+
+}
+.header{
+  position: relative;
+  height: 150rpx;
+  width: 550rpx;
+}
+.header image{
+  position: absolute;
+  height: 150rpx;
+  width: 550rpx;
+}
+.header .headertext{
+  position: absolute;
+  font-size: 40rpx;
+  color: #FFFFFF;
+  top:50rpx;
+  left: 240rpx;
+}
+.notice-text{
+  z-index: 10;
+  margin: 10rpx;
+  width: 460rpx;
+  height: 290rpx;
+  padding: 30rpx 20rpx 0rpx 20rpx;
+}
+
+.surebtn{
+  margin-top: 30rpx;
+  height:80rpx;
+  width: 466rpx;
+  background-color: #F67F79;
+  border-bottom-left-radius: 10rpx;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.surebtn .btn-text{
+  font-size: 36rpx;
+  color: #FFFFFF;
+}

@@ -1,0 +1,4 @@
+<!--components/redPoint/redPoint.wxml-->
+<view class='redPoint'>
+    <text></text>
+</view>

@@ -1,0 +1,60 @@
+.footer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.footer .index{
+  height: 100%;
+  width: 140rpx;
+  box-sizing: border-box;
+  border-right: 1px solid #E4E4DF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.index image{
+  height: 50rpx;
+  width: 50rpx;
+}
+.index label{
+  height: 40rpx;
+  width: 80rxp;
+  text-align: center;
+  font-size: 26rpx;
+}
+.footer .buy{
+  height: 100%;
+  width: 250rpx;
+  background-color: #FEF0ED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.buy .buyPrice{
+  color: #F46069;
+  font-size: 30rpx;
+}
+.buy .buyLabel{
+  color: #F46069;
+  font-size: 26rpx;
+}
+.footer .spellgroup{
+  height: 100%;
+  width: 360rpx;
+  background: linear-gradient(to right,#FFA260,#FE5E5B);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.spellgroup .spellPrice{
+  color: #FFFFFF;
+  font-size: 30rpx;
+}
+.spellgroup .spellLabel{
+  color: #FFFFFF;
+  font-size: 26rpx;
+}

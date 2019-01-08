@@ -1,0 +1,14 @@
+<view class='footer'>
+  <view class='index'>
+    <image src='/img/icon-store.png'></image>
+    <label>首页</label>
+  </view>
+  <view class='buy' wx:if="{{buy}}">
+    <view class='buyPrice'>￥5.00</view>
+    <view class='buyLabel'>单独购买</view>
+  </view>
+  <view class='spellgroup' style='width: {{buy?360:610}}rpx'>
+    <view class='spellPrice'>￥1.00</view>
+    <view class='spellLabel'>拼团</view>
+  </view>
+</view>      

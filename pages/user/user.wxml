@@ -8,7 +8,7 @@
 <!-- 用户信息 -->
 <navigator class='userinfo'>
   <view class='userinfo-bar'>
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登入 </button>
     <view wx:else>
       <view class='userinfo-avatar'>
         <image bindtap="bindViewTap" class="userinfo-avatar1" src="{{userInfo.avatarUrl}}" mode="cover"></image>
