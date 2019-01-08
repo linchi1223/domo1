@@ -1,9 +1,15 @@
-<view class="search-wrapper" catchtouchmove='stopMove'>
+<!-- <view class="search-wrapper" catchtouchmove='stopMove'>
   <image class='icon' src='/img/img/serach.png'></image>
   <input class="search-input" confirm-type="search" bindconfirm="search" value="{{ searchText }}"></input>
   <view class='search-cancel' bindtap='searchCancel'>取消</view>
+</view> -->
+<view class='search'>
+  <view class='select'>
+    <image src='/img/search.png'></image>
+     <input  type='text' confirm-type="search" bindinput='input' auto-focus='true'  bindconfirm='search' placeholder='搜索商品'></input>
+  </view>
+  <view class='cancel' bindtap='cancel'>取消</view>
 </view>
-
 <view class="order-items" catchtouchmove='stopMove'>
   <view wx:for="{{orderList}}" class="item {{orderProperty=== item.property ? 'active' : '' }}" data-property='{{ item.property }}' bindtap='clickOrder' wx:key="{{ index }}">{{ item.name }}
 
@@ -38,7 +44,7 @@
 </view> -->
 
 <view class="item-list">
-  <common-item wx:for="{{pageList}}" wx:key="{{item.id}}" commodity="{{item}}"></common-item>
+  <common-item wx:for="{{pageList}}" wx:key="{{item.id}}" commodity="{{item}}">        </common-item>
 </view>
 
 <view class="no-result" hidden="{{!noResult}}">

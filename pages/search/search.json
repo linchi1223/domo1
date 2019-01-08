@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "common-item": "/components/common-item/common-item",
+    "loading": "/components/loading/loading",
+    "list-footer": "/components/list-footer/list-footer",
+    "no-result": "/components/no-result/no-result"
+  }
 }
